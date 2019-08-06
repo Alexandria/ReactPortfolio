@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Projects renders expected structure 1`] = `
+<div
+  className="card"
+  style={
+    Object {
+      "maxWidth": "20rem",
+    }
+  }
+>
+  <img
+    alt="Meeple"
+    height={300}
+    src="Meeplely.jpg"
+  />
+  <div
+    className="card-header"
+  >
+    Meeplely
+  </div>
+  <div
+    className="card-body"
+  >
+    <blockquote
+      className="blockquote mb-0"
+    >
+      <p>
+        Full stack web application that will help you manage your board game collection.
+      </p>
+      <footer>
+        <img
+          alt="Type Script"
+          height={40}
+          src="typescript.png"
+          width={40}
+        />
+        <img
+          alt="Node JS"
+          height={40}
+          src="nodeJs.png"
+          width={40}
+        />
+        <img
+          alt="react"
+          height={40}
+          src="react.png"
+          width={40}
+        />
+        <img
+          alt="postgres"
+          height={40}
+          src="postgres.png"
+          width={40}
+        />
+      </footer>
+    </blockquote>
+  </div>
+</div>
+`;
