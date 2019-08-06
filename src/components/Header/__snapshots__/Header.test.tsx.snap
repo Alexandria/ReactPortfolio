@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders expected structure 1`] = `
+<div
+  className="jumbotron "
+>
+  <div
+    className="container"
+  >
+    <h1
+      className="display-4"
+    >
+      Lex Sanders
+    </h1>
+    <p
+      className="lead"
+    >
+      Software Developer
+    </p>
+  </div>
+</div>
+`;
