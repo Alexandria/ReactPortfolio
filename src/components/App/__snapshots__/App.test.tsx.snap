@@ -2,6 +2,8 @@
 
 exports[`App renders expected structure 1`] = `
 <div>
-  App component
+  <Header />
+  <AboutMe />
+  <Projects />
 </div>
 `;
