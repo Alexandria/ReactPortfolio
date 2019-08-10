@@ -1,6 +1,6 @@
 import { Project } from "../../components/ProjectCard/ProjectCard";
 import typescript from "../../assests/icons/typescript.png";
-import Meeplely from "../../assests/images/Meeplely.jpg";
+import Meeplely from "../../assests/images/Meeplely.png";
 import nodeJs from "../../assests/icons/nodeJs.png";
 import react from "../../assests/icons/react.png";
 import postgres from "../../assests/icons/postgres.png";

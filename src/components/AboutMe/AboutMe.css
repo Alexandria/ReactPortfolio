@@ -1,3 +1,7 @@
-div {
-  color: "blue";
+h1 {
+  font-family: "Anton", sans-serif;
+}
+.aboutMe {
+  padding-top: 20%;
+  padding-bottom: 20%;
 }

@@ -7,8 +7,28 @@ import {
   CardContent,
   Typography,
   CardActions,
-  Button
+  Button,
+  makeStyles
 } from "@material-ui/core";
+import { createStyles } from "@material-ui/styles";
+
+const styles = makeStyles(
+  createStyles({
+    card: {
+      maxWidth: 345,
+      marginLeft: 10,
+      marginRight: 10,
+      marginTop: 10,
+      marginButton: 10,
+      backgroundColor: "#c38d9e"
+    },
+    media: {
+      height: 230,
+      width: 240,
+      flexGrow: 1
+    }
+  })
+);
 export interface Project {
   title: string;
   img: string;
@@ -18,14 +38,19 @@ export interface Project {
 
 const ProjectCard: React.FC<Project> = (props: Project) => {
   const { title, img, description, toolIcons } = props;
+  const classes = styles();
 
   return (
-    <Card>
+    <Card className={classes.card}>
       <CardActionArea>
         <CardMedia
           component="img"
           alt="Contemplative Reptile"
-          height="140"
+          style={{
+            height: 230,
+            width: 240,
+            flexGrow: 1
+          }}
           image={img}
           title="Contemplative Reptile"
         />
@@ -42,9 +67,6 @@ const ProjectCard: React.FC<Project> = (props: Project) => {
         {toolIcons.map(icon => {
           return <img src={icon} height={40} width={40} alt={icon} />;
         })}
-        <Button size="small" color="primary">
-          Learn More
-        </Button>
       </CardActions>
     </Card>
   );

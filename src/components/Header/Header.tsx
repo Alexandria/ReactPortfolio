@@ -3,7 +3,10 @@ import "./Header.css";
 
 const Header: React.FC = () => {
   return (
-    <div className="jumbotron ">
+    <div
+      className="jumbotron jumbotron-fluid"
+      style={{ height: "40%", color: "transparent !important" }}
+    >
       <div className="container">
         <h1 className="display-4">Lex Sanders</h1>
         <p className="lead">Software Developer</p>
