@@ -1,0 +1,10 @@
+.AppRouter {
+  height: inherit;
+}
+.components {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+}

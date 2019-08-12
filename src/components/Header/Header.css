@@ -1,16 +1,2 @@
-.jumbotron {
-  background-color: #1f2833;
-  background-image: linear-gradient(to bottom right, #45a29e, #1f2833);
-  padding-top: 18%;
-  padding-bottom: 18%;
-}
-.display-4 {
-  color: aliceblue;
-  font-family: "Anton", sans-serif;
-  font-size: 100px;
-}
-.lead {
-  color: aliceblue;
-  font-size: 45px;
-  font-family: "Anton", sans-serif;
+.Header {
 }
