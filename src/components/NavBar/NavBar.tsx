@@ -17,32 +17,33 @@ export const NavBar: React.FC = () => {
     return event;
   }
   function links(props: LinkTabProps) {
-    const currentValue = props.location.pathname.includes("/home")
-      ? "home/:id"
-      : props.location.pathname;
+    const currentValue = props.location.pathname;
     setValue(currentValue);
     return (
-      <div className="NavBar">
-        <Tab
-          onClick={(event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-            event.preventDefault();
-            props.history.push(props.href);
-            return event;
-          }}
-          {...props}
-        />
-      </div>
+      <Tab
+        onClick={(event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+          event.preventDefault();
+          props.history.push(props.href);
+          return event;
+        }}
+        {...props}
+      />
     );
   }
   const LinkTab = withRouter(links);
 
   return (
-    <div>
-      <Tabs variant="fullWidth" value={value} onChange={handleChange}>
+    <AppBar
+      position="fixed"
+      color="default"
+      elevation={0}
+      style={{ backgroundColor: "transparent" }}
+    >
+      <Tabs variant="standard" value={value} onChange={handleChange}>
         <LinkTab label="Home" href="/home" value="/home" />
         <LinkTab label="About Me" href="/about" value="/about" />
         <LinkTab label="Projects" href="/projects" value="/projects" />
       </Tabs>
-    </div>
+    </AppBar>
   );
 };

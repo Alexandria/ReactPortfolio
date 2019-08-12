@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import ScrollAnimation from "react-animate-on-scroll";
 import Header from "../Header/Header";
 import { Animated } from "react-animated-css";
 import { NavBar } from "../NavBar/NavBar";
