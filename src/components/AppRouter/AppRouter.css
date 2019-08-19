@@ -1,9 +1,13 @@
-.Header {
-  font-family: "Anton", sans-serif;
+.AppRouter {
   height: inherit;
   width: inherit;
-
+}
+.components {
+  height: inherit;
+  width: inherit;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  height: inherit;
 }

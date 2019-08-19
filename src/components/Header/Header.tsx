@@ -1,16 +1,16 @@
 import React from "react";
 import "./Header.css";
+import { Typography } from "@material-ui/core";
 
 const Header: React.FC = () => {
   return (
-    <div
-      className="jumbotron jumbotron-fluid"
-      style={{ height: "40%", color: "transparent !important" }}
-    >
-      <div className="container">
-        <h1 className="display-4">Lex Sanders</h1>
-        <p className="lead">Software Developer</p>
-      </div>
+    <div className="Header">
+      <Typography variant="h1" style={{ fontFamily: "Anton" }} gutterBottom>
+        Lex Sanders
+      </Typography>
+      <Typography variant="h2" gutterBottom>
+        Software Developer
+      </Typography>
     </div>
   );
 };

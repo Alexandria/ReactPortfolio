@@ -2,6 +2,13 @@ h1 {
   font-family: "Anton", sans-serif;
 }
 .aboutMe {
-  padding-top: 20%;
-  padding-bottom: 20%;
+  height: inherit;
+  width: inherit;
+  background-color: rosybrown;
+}
+.content {
+  height: 100vh;
+  background-color: cadetblue;
+  display: flex;
+  align-items: center;
 }

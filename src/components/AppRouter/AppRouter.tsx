@@ -1,39 +1,42 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import ScrollAnimation from "react-animate-on-scroll";
 import Header from "../Header/Header";
 import { Animated } from "react-animated-css";
 import { NavBar } from "../NavBar/NavBar";
 import AboutMe from "../AboutMe/AboutMe";
 import { myProjects } from "../../utils/myProjects";
 import Projects from "../Projects/Projects";
-
-const home = () => {
-  return (
-    <div>
-      {/* <Animated animationIn="fadeIn" animationOut="slideOutLeft" isVisible> */}
-      <Header />
-      {/* </Animated> */}
-    </div>
-  );
-};
-
-const about = () => {
-  return (
-    <div>
-      {/* <Animated animationIn="fadeIn" animationOut="fadeOut" isVisible> */}
-      <AboutMe />
-      {/* </Animated> */}
-    </div>
-  );
-};
+import "./AppRouter.css";
+import { Contact } from "../Contact/Contact";
 
 const projects = () => {
   return (
-    <div>
-      <ScrollAnimation animateIn="lightSpeedIn">
-        <Projects projects={myProjects} />
-      </ScrollAnimation>
+    <div className="components">
+      <Projects projects={myProjects} />
+    </div>
+  );
+};
+
+const aboutMe = () => {
+  return (
+    <div className="components">
+      <AboutMe />
+    </div>
+  );
+};
+
+const header = () => {
+  return (
+    <div className="components">
+      <Header />
+    </div>
+  );
+};
+
+const contact = () => {
+  return (
+    <div className="components">
+      <Contact />
     </div>
   );
 };
@@ -41,9 +44,15 @@ const projects = () => {
 export const AppRouter: React.FC = () => {
   return (
     <Router>
-      <Route exact path={["/", "/home"]} render={home} />
-      <Route exact path="/about" render={about} />
-      <Route exact path="/projects" render={projects} />
+      <NavBar />
+      <div className="AppRouter">
+        <Switch>
+          <Route exact path={["/home", "/"]} render={header} />
+          <Route exact path="/about" render={aboutMe} />
+          <Route exact path="/projects" render={projects} />
+          <Route exact path="/contact" render={contact} />
+        </Switch>
+      </div>
     </Router>
   );
 };

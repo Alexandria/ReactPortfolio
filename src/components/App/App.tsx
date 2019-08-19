@@ -1,13 +1,13 @@
 import React from "react";
 import "./App.css";
-import { NavBar } from "../NavBar/NavBar";
 import { AppRouter } from "../AppRouter/AppRouter";
+import { BrowserRouter as Router } from "react-router-dom";
+import { NavBar } from "../NavBar/NavBar";
 
 const App: React.FC = () => {
   return (
-    <div>
+    <div className="App">
       <AppRouter />
-      <NavBar />
     </div>
   );
 };
