@@ -45,14 +45,16 @@ const ProjectCard: React.FC<Project> = (props: Project) => {
       <CardActionArea>
         <CardMedia
           component="img"
-          alt="Contemplative Reptile"
+          alt={title}
           style={{
             height: 230,
             width: 240,
             flexGrow: 1
           }}
-          image={img}
-          title="Contemplative Reptile"
+          src="https://cl.ly/ca4fe99d580c/Screen%252520Recording%2525202019-08-19%252520at%25252009.56%252520AM.gif"
+          //image={img}
+          title={title}
+          // perhaps on mouse over
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">

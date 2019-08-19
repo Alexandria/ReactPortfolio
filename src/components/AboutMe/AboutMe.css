@@ -1,3 +1,14 @@
 h1 {
   font-family: "Anton", sans-serif;
 }
+.aboutMe {
+  height: inherit;
+  width: inherit;
+  background-color: rosybrown;
+}
+.content {
+  height: 100vh;
+  background-color: cadetblue;
+  display: flex;
+  align-items: center;
+}

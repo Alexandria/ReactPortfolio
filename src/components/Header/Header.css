@@ -1,2 +1,9 @@
 .Header {
+  font-family: "Anton", sans-serif;
+  height: inherit;
+  width: inherit;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
