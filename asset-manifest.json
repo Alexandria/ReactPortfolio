@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ReactPortfolio/static/css/main.530647ed.chunk.css",
+    "main.js": "/ReactPortfolio/static/js/main.5c4aad8b.chunk.js",
+    "main.js.map": "/ReactPortfolio/static/js/main.5c4aad8b.chunk.js.map",
+    "runtime~main.js": "/ReactPortfolio/static/js/runtime~main.2dc2a78e.js",
+    "runtime~main.js.map": "/ReactPortfolio/static/js/runtime~main.2dc2a78e.js.map",
+    "static/js/2.f86b1504.chunk.js": "/ReactPortfolio/static/js/2.f86b1504.chunk.js",
+    "static/js/2.f86b1504.chunk.js.map": "/ReactPortfolio/static/js/2.f86b1504.chunk.js.map",
+    "index.html": "/ReactPortfolio/index.html",
+    "precache-manifest.45cf29c792af3352116b15d1c9bb3b4a.js": "/ReactPortfolio/precache-manifest.45cf29c792af3352116b15d1c9bb3b4a.js",
+    "service-worker.js": "/ReactPortfolio/service-worker.js",
+    "static/css/main.530647ed.chunk.css.map": "/ReactPortfolio/static/css/main.530647ed.chunk.css.map",
+    "static/media/Meeplely.png": "/ReactPortfolio/static/media/Meeplely.7e90ce36.png",
+    "static/media/django.jpg": "/ReactPortfolio/static/media/django.02711c2c.jpg",
+    "static/media/insomnia.png": "/ReactPortfolio/static/media/insomnia.674c121f.png",
+    "static/media/nodeJs.png": "/ReactPortfolio/static/media/nodeJs.eebad245.png",
+    "static/media/phpmyadmin.png": "/ReactPortfolio/static/media/phpmyadmin.8b671c69.png",
+    "static/media/postgres.png": "/ReactPortfolio/static/media/postgres.ea92d658.png",
+    "static/media/react.png": "/ReactPortfolio/static/media/react.47ce6e77.png",
+    "static/media/typescript.png": "/ReactPortfolio/static/media/typescript.cc4f3a67.png"
+  }
+}
