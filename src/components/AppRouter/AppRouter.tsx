@@ -47,7 +47,7 @@ export const AppRouter: React.FC = () => {
       <NavBar />
       <div className="AppRouter">
         <Switch>
-          <Route exact path={["/home", "/"]} render={header} />
+          <Route exact path={["/home", "/","/ReactPortfolio/"]} render={header} />
           <Route exact path="/about" render={aboutMe} />
           <Route exact path="/projects" render={projects} />
           <Route exact path="/contact" render={contact} />
