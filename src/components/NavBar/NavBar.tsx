@@ -34,8 +34,13 @@ export const NavBar: React.FC = () => {
     return event;
   }
   function links(props: LinkTabProps) {
-    const currentValue = props.location.pathname;
-    setValue(currentValue);
+    const location = props.location.pathname;
+    if (location === "/" || location === "/ReactPortfolio") {
+      setValue("/home");
+    } else {
+      setValue(location);
+    }
+
     return (
       <div className="tab">
         <Tab
