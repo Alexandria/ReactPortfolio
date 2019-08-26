@@ -2,8 +2,13 @@
   font-family: "Anton", sans-serif;
   height: inherit;
   width: inherit;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+}
+.contentHeader {
+  height: 100vh;
+  position: absolute;
+  width: 50vw;
+  top: 20vh;
+}
+Typography {
+  font-family: "Anton", sans-serif;
 }

@@ -5,12 +5,17 @@ import { Typography } from "@material-ui/core";
 const Header: React.FC = () => {
   return (
     <div className="Header">
-      <Typography variant="h1" style={{ fontFamily: "Anton" }} gutterBottom>
-        Lex Sanders
-      </Typography>
-      <Typography variant="h2" gutterBottom>
-        Software Developer
-      </Typography>
+      <div className="contentHeader">
+        <Typography variant="h3" style={{ fontFamily: "Anton" }} gutterBottom>
+          Hello! My name is Lex.
+        </Typography>
+        <Typography variant="h3" style={{ fontFamily: "Anton" }} gutterBottom>
+          I make full stack web applications.
+        </Typography>
+        <Typography variant="h3" style={{ fontFamily: "Anton" }} gutterBottom>
+          Feel free to checkout my projects!
+        </Typography>
+      </div>
     </div>
   );
 };
